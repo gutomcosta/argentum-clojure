@@ -1,4 +1,7 @@
-(ns candlestick)
+(ns argentum.domain.candlestick)
+
+
+(defrecord Candlestick [preco-minimo preco-maximo abertura fechamento volume])
 
 (defn create-candlestick
   [negocios]
@@ -10,7 +13,7 @@
     abertura (:preco (first negocios))
     fechamento (:preco (last negocios))
     volume (apply + (map (fn [negocio] (* (:preco negocio) (:quantidade negocio))) negocios))]
-    {:abertura abertura :fechamento fechamento :preco-minimo preco-minimo :preco-maximo preco-maximo :volume volume}))
+    (Candlestick. preco-minimo preco-maximo abertura fechamento volume)))
 
 
 (defn  candlestick-de-alta?

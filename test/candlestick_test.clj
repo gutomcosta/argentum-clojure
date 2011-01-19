@@ -1,7 +1,7 @@
 (ns candlestick-test
   (:use clojure.test)
-  (:use candlestick)
-  (:use negocio)
+  (:use argentum.domain.candlestick)
+  (:use argentum.domain.negocio)
   (:import java.util.Calendar))
 
 
