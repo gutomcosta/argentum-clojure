@@ -1,0 +1,17 @@
+<list>
+	<negocio>
+		<preco>43.5</preco>
+		<quantidade>100</quantidade>
+                <data>
+                  <time>559329406</time>
+                </data>
+
+	</negocio>
+        <negocio>
+		<preco>53.5</preco>
+		<quantidade>100</quantidade>
+                <data>
+                  <time>559329406</time>
+                </data>
+	</negocio>
+</list>
