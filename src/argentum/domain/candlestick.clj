@@ -3,7 +3,7 @@
 
 (defrecord Candlestick [preco-minimo preco-maximo abertura fechamento volume])
 
-(defn create-candlestick
+(defn criar-candlestick
   [negocios]
   (assert (not (nil? negocios)))
   (assert (not (empty? negocios)))

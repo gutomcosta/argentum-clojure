@@ -3,7 +3,7 @@
 
 (defrecord Negocio [data preco quantidade])
 
-(defn create-negocio
+(defn criar-negocio
   [preco quantidade data]
   (assert (not (nil? data)))
   (assert (> preco 0))
