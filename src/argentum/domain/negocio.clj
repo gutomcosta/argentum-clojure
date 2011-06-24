@@ -9,3 +9,8 @@
   (assert (> preco 0))
   (Negocio. data preco quantidade)
   )
+
+
+(defn obter-volume
+  [negocio]
+  (* (:preco negocio) (:quantidade negocio)))
