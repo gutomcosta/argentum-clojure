@@ -10,7 +10,7 @@
 
 (deftest serie-temporal-test
   (let [serie-temporal (criar-serie [1,2,3,4,3,4,5,4,3])
-        ultimos-3-dias (obter-candles-ultimos-3-dias serie-temporal 3)]
+        ultimos-3-dias (candles-ultimos-3-dias serie-temporal 3)]
     (testing "deve retonar os candlesticks dos 3 ultimos dias"
       (is (= 3 (count ultimos-3-dias))))
     (testing "deve retornar 1 no fechamento do primeiro dia"
