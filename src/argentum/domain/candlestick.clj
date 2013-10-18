@@ -11,15 +11,15 @@
 
 (defn- obter-preco-minimo-de
   [negocios]
-  (apply min (obter-dados-de negocios :preco)))
+  (reduce min (obter-dados-de negocios :preco)))
 
 (defn- obter-preco-maximo-de
   [negocios]
-  (apply max (obter-dados-de negocios :preco)))
+  (reduce max (obter-dados-de negocios :preco)))
 
 (defn- obter-volume-total-de
   [negocios]
-  (apply + (map obter-volume negocios)))
+  (reduce + (map obter-volume negocios)))
 
 (defn criar-candlestick
   [negocios]
